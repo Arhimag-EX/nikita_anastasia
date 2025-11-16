@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Свадебная вечеринка Никиты и Анастасии</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Романтичные шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background: url('images/фон.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f4f4f4;
+      line-height: 1.7;
+    }
+
+    /* Анимация плавного появления */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      color: #d8c39a;
+      margin-bottom: 10px;
+
+      background: linear-gradient(90deg, #8d6e32, #e7c88e, #b08d55);
+      -webkit-background-clip: text;
+      color: transparent;
+
+      animation: shine 6s linear infinite;
+    }
+
+    /* Золотой блеск */
+    @keyframes shine {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: auto;
+      color: #3f3f3f;
+      background: rgba(255, 255, 255, 0.45);
+      padding: 10px 15px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+
+    /* Подложка */
+    section {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 40px 30px;
+      background: rgba(255,255,255,0.45);
+      border-radius: 18px;
+      backdrop-filter: blur(3px);
+      
+      /* Отступы слева/справа на телефонах 0.5–0.8 см */
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+
+    section h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.3rem;
+      text-align: center;
+      margin-bottom: 25px;
+
+      background: linear-gradient(90deg, #8d6e32, #e7c88e, #b08d55);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: shine 6s linear infinite;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #3e3e3e;
+    }
+
+    .details {
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 25px 0;
+      line-height: 2;
+      color: #2f2f2f;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 25px auto;
+      font-size: 2rem;
+      color: #c0a278;
+    }
+
+    /* Dress-code */
+    .dress-block {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .palette-title {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #6a5836;
+    }
+
+    .palette {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .circle {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 2px solid #b29d7a;
+    }
+
+    /* Палитры */
+    .chocolate { background: #4e2e1e; }
+    .silver { background: linear-gradient(135deg,#cfd1d3,#8f9194); }
+    .champagne { background: linear-gradient(135deg,#f6e7c9,#d8c29a); }
+    .pink { background: #f7d6df; }
+
+    .black { background: #000; }
+    .coffee { background: #4b2f25; }
+    .men-silver { background: #b8bcc1; }
+    .ivory { background: #f3eee4; }
+
+  </style>
+</head>
+
+<body>
+
+<header class="fade-in">
+  <h1>Никита & Анастасия</h1>
+  <p>Мы приглашаем вас разделить с нами самый тёплый и волшебный день нашей любви.</p>
+</header>
+
+<section class="fade-in">
+
+  <h2>Регистрация</h2>
+  <p class="details">
+    📅 <strong>19 декабря 2025</strong><br>
+    📍 ЗАГС, ул. Ленина 11<br>
+    🕒 Сбор гостей: <strong>13:40</strong>
+  </p>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <h2>Торжество</h2>
+  <p class="details">
+    📍 Село Покровка, пансион «Покровский», гостевой дом «Ля Покровка»<br>
+    🕓 Начало вечера: <strong>16:00</strong><br>
+  </p>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <h2>Dress-code</h2>
+  <p>Выберите оттенок, который подчеркнёт стиль, атмосферу и красоту вечера.</p>
+
+  <!-- Женщины -->
+  <div class="dress-block">
+    <div class="palette-title">Леди</div>
+    <div class="palette">
+      <div class="circle chocolate"></div>
+      <div class="circle silver"></div>
+      <div class="circle champagne"></div>
+      <div class="circle pink"></div>
+    </div>
+  </div>
+
+  <!-- Мужчины -->
+  <div class="dress-block">
+    <div class="palette-title">Джентльмены</div>
+    <div class="palette">
+      <div class="circle black"></div>
+      <div class="circle coffee"></div>
+      <div class="circle men-silver"></div>
+      <div class="circle ivory"></div>
+    </div>
+  </div>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<h2 class="fade-in">Обратная связь</h2>
+<p class="details fade-in">
+  Если у вас есть вопросы, уточнения или пожелания — вы можете написать нам напрямую.<br><br>
+  <a href="https://wa.me/79836001355"
+     style="
+       font-size: 1.4rem;
+       color: #8d6e32;
+       font-weight: bold;
+       text-decoration: none;
+       background: rgba(255,255,255,0.5);
+       padding: 12px 22px;
+       border-radius: 12px;
+       display: inline-block;
+     ">
+     Написать в WhatsApp
+  </a>
+</p>
+
+</section>
+
+</body>
+</html>

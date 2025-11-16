@@ -5,223 +5,177 @@
   <title>Свадебная вечеринка Никиты и Анастасии</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Романтичные шрифты -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Шрифты, максимально похожие на картинку -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Playfair Display', serif;
-      background: url('images/фон.jpg') no-repeat center center fixed;
+      font-family: 'Cormorant Garamond', serif;
+      background: url('images/фон') no-repeat center center fixed;
       background-size: cover;
-      color: #f4f4f4;
+      color: #3a3a3a;
       line-height: 1.7;
-    }
-
-    /* Анимация плавного появления */
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 1.5s ease forwards;
-    }
-    @keyframes fadeIn {
-      to { opacity: 1; }
     }
 
     header {
       text-align: center;
       padding: 80px 20px 40px;
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(4px);
     }
 
     header h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 4rem;
-      color: #d8c39a;
+      font-size: 3.8rem;
+      color: #3a2a20;
       margin-bottom: 10px;
-
-      background: linear-gradient(90deg, #8d6e32, #e7c88e, #b08d55);
-      -webkit-background-clip: text;
-      color: transparent;
-
-      animation: shine 6s linear infinite;
-    }
-
-    /* Золотой блеск */
-    @keyframes shine {
-      0% { background-position: 0% 50%; }
-      100% { background-position: 200% 50%; }
+      letter-spacing: 1px;
     }
 
     header p {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       max-width: 800px;
       margin: auto;
-      color: #3f3f3f;
-      background: rgba(255, 255, 255, 0.45);
-      padding: 10px 15px;
-      border-radius: 12px;
-      display: inline-block;
+      color: #4b4b4b;
+      font-family: 'Cormorant Garamond', serif;
     }
 
-    /* Подложка */
     section {
-      max-width: 950px;
-      margin: 40px auto;
+      max-width: 900px;
+      margin: 50px auto;
       padding: 40px 30px;
-      background: rgba(255,255,255,0.45);
+      background: rgba(255,255,255,0.55);
       border-radius: 18px;
-      backdrop-filter: blur(3px);
-      
-      /* Отступы слева/справа на телефонах 0.5–0.8 см */
-      margin-left: 12px;
-      margin-right: 12px;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
 
-    section h2 {
+    h2 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3.3rem;
+      font-size: 3rem;
       text-align: center;
       margin-bottom: 25px;
-
-      background: linear-gradient(90deg, #8d6e32, #e7c88e, #b08d55);
-      -webkit-background-clip: text;
-      color: transparent;
-      animation: shine 6s linear infinite;
+      color: #3a2a20;
     }
 
-    section p {
-      font-size: 1.2rem;
+    p {
+      font-size: 1.35rem;
+      text-align: center;
       margin-bottom: 20px;
-      text-align: center;
-      color: #3e3e3e;
-    }
-
-    .details {
-      font-size: 1.4rem;
-      text-align: center;
-      margin: 25px 0;
-      line-height: 2;
-      color: #2f2f2f;
+      font-family: 'Cormorant Garamond', serif;
     }
 
     .divider {
       text-align: center;
       margin: 25px auto;
-      font-size: 2rem;
-      color: #c0a278;
-    }
-
-    /* Dress-code */
-    .dress-block {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    .palette-title {
       font-size: 1.6rem;
-      margin-bottom: 10px;
-      color: #6a5836;
+      color: #b9a58a;
     }
 
-    .palette {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
+    .details {
+      font-size: 1.45rem;
+      line-height: 2;
+      color: #3a3a3a;
     }
 
-    .circle {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      border: 2px solid #b29d7a;
+    /* изображения dress-code */
+    .dress-image {
+      width: 85%;
+      max-width: 380px;
+      display: block;
+      margin: 20px auto 40px;
     }
 
-    /* Палитры */
-    .chocolate { background: #4e2e1e; }
-    .silver { background: linear-gradient(135deg,#cfd1d3,#8f9194); }
-    .champagne { background: linear-gradient(135deg,#f6e7c9,#d8c29a); }
-    .pink { background: #f7d6df; }
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
 
-    .black { background: #000; }
-    .coffee { background: #4b2f25; }
-    .men-silver { background: #b8bcc1; }
-    .ivory { background: #f3eee4; }
-
+    /* кнопка WhatsApp */
+    .wa-button {
+      font-size: 1.5rem;
+      color: #3a2a20;
+      font-weight: 600;
+      text-decoration: none;
+      background: rgba(255,255,255,0.8);
+      padding: 14px 24px;
+      border-radius: 14px;
+      border: 1px solid #c0b2a4;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .wa-button:hover {
+      background: #e8dfd5;
+    }
   </style>
 </head>
 
 <body>
 
-<header class="fade-in">
-  <h1>Никита & Анастасия</h1>
-  <p>Мы приглашаем вас разделить с нами самый тёплый и волшебный день нашей любви.</p>
+<header>
+  <h1>Свадебная вечеринка</h1>
+  <p>Никита и Анастасия приглашают вас отпраздновать вместе с нами этот волшебный день любви и света.</p>
 </header>
 
-<section class="fade-in">
+<section>
 
+  <h2>Дорогие родные и близкие</h2>
+  <p>
+    Мы мечтаем подарить вам атмосферу тепла, романтики и радостного праздника.
+    Этот вечер станет особенным — и нам очень хочется разделить его с вами.
+  </p>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- Регистрация -->
   <h2>Регистрация</h2>
   <p class="details">
-    📅 <strong>19 декабря 2025</strong><br>
-    📍 ЗАГС, ул. Ленина 11<br>
-    🕒 Сбор гостей: <strong>13:40</strong>
+    📍 <strong>ЗАГС, ул. Ленина 11</strong><br>
+    🕒 <strong>13:40</strong> — приходить по желанию<br>
+    📅 <strong>19 декабря 2025</strong>
   </p>
 
   <div class="divider">✦ ✦ ✦</div>
 
+  <!-- Торжество -->
   <h2>Торжество</h2>
   <p class="details">
-    📍 Село Покровка, пансион «Покровский», гостевой дом «Ля Покровка»<br>
-    🕓 Начало вечера: <strong>16:00</strong><br>
+    📍 <strong>Село Покровка</strong><br>
+    Пансион «Покровский», гостевой дом «Ля Покровка»<br>
+    🕓 <strong>Начало в 16:00</strong>
   </p>
 
   <div class="divider">✦ ✦ ✦</div>
 
-  <h2>Dress-code</h2>
-  <p>Выберите оттенок, который подчеркнёт стиль, атмосферу и красоту вечера.</p>
+  <!-- Dress code -->
+  <h2>Леди</h2>
+  <img src="images/леди" class="dress-image" alt="палитра для леди">
 
-  <!-- Женщины -->
-  <div class="dress-block">
-    <div class="palette-title">Леди</div>
-    <div class="palette">
-      <div class="circle chocolate"></div>
-      <div class="circle silver"></div>
-      <div class="circle champagne"></div>
-      <div class="circle pink"></div>
-    </div>
-  </div>
+  <h2>Джентльмены</h2>
+  <img src="images/джент" class="dress-image" alt="палитра для джентльменов">
 
-  <!-- Мужчины -->
-  <div class="dress-block">
-    <div class="palette-title">Джентльмены</div>
-    <div class="palette">
-      <div class="circle black"></div>
-      <div class="circle coffee"></div>
-      <div class="circle men-silver"></div>
-      <div class="circle ivory"></div>
-    </div>
-  </div>
+  <div class="divider">✦ ✦ ✦</div>
 
-<div class="divider">✦ ✦ ✦</div>
+  <!-- Карта -->
+  <h2>Место торжества</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!...">
+  </iframe>
 
-<h2 class="fade-in">Обратная связь</h2>
-<p class="details fade-in">
-  Если у вас есть вопросы, уточнения или пожелания — вы можете написать нам напрямую.<br><br>
-  <a href="https://wa.me/79836001355"
-     style="
-       font-size: 1.4rem;
-       color: #8d6e32;
-       font-weight: bold;
-       text-decoration: none;
-       background: rgba(255,255,255,0.5);
-       padding: 12px 22px;
-       border-radius: 12px;
-       display: inline-block;
-     ">
-     Написать в WhatsApp
-  </a>
-</p>
+  <div class="divider">✦ ✦ ✦</div>
+
+  <!-- Обратная связь -->
+  <h2>Обратная связь</h2>
+  <p>Если у вас есть вопросы, уточнения или пожелания — вы можете написать нам напрямую.</p>
+
+  <p>
+    <a class="wa-button" href="https://wa.me/79836001355">Написать в WhatsApp</a>
+  </p>
 
 </section>
 
